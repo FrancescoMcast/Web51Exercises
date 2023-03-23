@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/contactstyle.css">
+</head>
+<body>
+    <div id="contactFormContainer">
+        <form action="mailto:cesco.catania2001@gmail.com" onsubmit="return validateForm();">
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName">
+            </div>
+            <div>
+                <label for="fullnationality">Nationality</label>
+                <select name="nationality" id="nationality">
+                    <option value="0">Select Nationality</option>
+                    <option value="1">Maltese</option>
+                    <option value="2">English</option>
+                    <option value="3">Italian</option>
+                    <option value="4">French</option>
+                    <option value="5">Spanish</option>
+                    <option value="6">German</option>
+                    <option value="7">Swedish</option>
+                    <option value="8">Polish</option>
+                    <option value="9">Potrugese</option>
+                </select>
+            </div>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="fullUsername" name="fullUsername">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="fullPassword" name="fullPassword">
+            </div>
+            <div>
+                <label for="remember">Remember Password</label>
+                <input type="checkbox" id="remember" name="remember">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Select Below</legend>
+                    <div>
+                        <input type="radio" id="red" name="colour">
+                        <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="green" name="colour">
+                        <label for="green">Green</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="blue" name="colour">
+                        <label for="blue">Blue</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="buttoncontainer">
+                <button type="submit">Save</button>
+                <button type="reset" onclick="resetForm();">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div id="contactFormErrors">
+        <ul id="errorList" class="errorText">
+        </ul>
+        
+    </div>
+    <script src="assets/scripts/validation.js"></script>
+</body>
+</html>
