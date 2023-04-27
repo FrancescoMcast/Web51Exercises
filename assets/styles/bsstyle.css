@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Poppins";
+    /*type src and in brackets ../fonts/ then select the fonts*/
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+
+
 div{
     border: none solid black;
 }
@@ -6,5 +14,26 @@ div{
 
 .carousel{
     padding-bottom: 2%;
+}
+
+.btn-purple{
+    background-color: blueviolet;
+    border-color: blueviolet;
+    font font-family: 'Poppins';
+}
+
+.btn-purple:hover{
+    background-color: #4a028d;
+    border-color: #4a028d;
+}
+
+.btn{
+    font-size: 1.5rem;
+}
+
+.btn-purple:active{
+}
+/*we use disabled to deny the user until all info is inputed*/
+.btn-purple:disabled{
 }
 
